@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de Áreas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2 style="text-align: center;">CALCULADORA DE AREAS</h2>
+
+  <div class="faixa-horizontal">
+
+    <!-- Triângulo -->
+    <div class="bloco">
+      <div class="titulo-bloco">Triângulo</div>
+      <div class="forma"><div class="triangulo"></div></div>
+      <div class="inputs">
+        Base: <input type="number" id="baseTri" /><br />
+        Altura: <input type="number" id="altTri" /><br />
+        <button onclick="calcTriangulo()">calc. área</button><br />
+        Área: <input type="text" id="areaTri" readonly />
+      </div>
+    </div>
+
+    <!-- Quadrado -->
+    <div class="bloco">
+      <div class="titulo-bloco">Quadrado</div>
+      <div class="forma"><div class="quadrado"></div></div>
+      <div class="inputs">
+        Lado: <input type="number" id="ladoQua" /><br /><br />
+        <button onclick="calcQuadrado()">calc. área</button><br />
+        Área: <input type="text" id="areaQua" readonly />
+      </div>
+    </div>
+
+    <!-- Círculo -->
+    <div class="bloco">
+      <div class="titulo-bloco">Círculo</div>
+      <div class="forma"><div class="circulo"></div></div>
+      <div class="inputs">
+        Raio: <input type="number" id="raioCir" /><br /><br />
+        <button onclick="calcCirculo()">calc. área</button><br />
+        Área: <input type="text" id="areaCir" readonly />
+      </div>
+    </div>
+
+    <!-- Trapézio -->
+    <div class="bloco">
+      <div class="titulo-bloco">Trapézio</div>
+      <div class="forma"><div class="trapezio"></div></div>
+      <div class="inputs">
+        Base Maior: <input type="number" id="baseMaior" /><br />
+        Base Menor: <input type="number" id="baseMenor" /><br />
+        Altura: <input type="number" id="altTra" /><br />
+        <button onclick="calcTrapezio()">calc. área</button><br />
+        Área: <input type="text" id="areaTra" readonly />
+      </div>
+    </div>
+
+    <!-- Retângulo -->
+    <div class="bloco">
+      <div class="titulo-bloco">Retângulo</div>
+      <div class="forma"><div class="retangulo"></div></div>
+      <div class="inputs">
+        Base: <input type="number" id="baseRet" /><br />
+        Altura: <input type="number" id="altRet" /><br />
+        <button onclick="calcRetangulo()">calc. área</button><br />
+        Área: <input type="text" id="areaRet" readonly />
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
